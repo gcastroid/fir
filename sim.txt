@@ -1,0 +1,7 @@
+vsim -gui work.fir_tb(test)
+add wave -position insertpoint  \
+sim:/fir_tb/rst \
+sim:/fir_tb/clk \
+sim:/fir_tb/fir_in \
+sim:/fir_tb/fir_out
+run 4 us
